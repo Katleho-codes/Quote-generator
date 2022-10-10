@@ -10,8 +10,14 @@ const shakeBtn = document.querySelector(".shake-btn");
 const advice = document.querySelector(".actual_advice");
 const adviceNumber = document.querySelector("#advice_number");
 
-shakeBtn.addEventListener("click", () => {
-  const quote = Math.floor(Math.random() * quotes.length);
-  adviceNumber.innerHTML = quote;
-  advice.innerHTML = quotes[quote];
-});
+shakeBtn.addEventListener("click", fetchAPI);
+
+async function fetchAPI() {
+  let URL = fetch("https://api.adviceslip.com/advice");
+  await URL.then((res) => res.json()).then((data) => {
+    adviceNumber.innerHTML = data.slip.id;
+    advice.innerHTML = data.slip.advice;
+  });
+}
+
+fetchAPI();
