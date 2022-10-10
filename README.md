@@ -5,16 +5,13 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ## Table of contents
 
 - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [Built with](#built-with)
 - [Author](#author)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Live site](https://your-live-site-url.com)
-
-## My process
 
 ### Built with
 
@@ -25,5 +22,5 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/katleho-codes)
-- Twitter - [@yourusername](https://www.twitter.com/katleho_janco)
+- Frontend Mentor - [@Katleho-codes](https://www.frontendmentor.io/profile/katleho-codes)
+- Twitter - [@katleho_janco](https://www.twitter.com/katleho_janco)

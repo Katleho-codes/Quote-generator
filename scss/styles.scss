@@ -26,133 +26,127 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     background-color: $DarkBlue;
 }
 
+// Defaults
 
-
-@media (max-width:800px) {
-    .card {
-        min-width: 300px;
-        max-width: 320px;
-        height: 300px;
-        border: #1f2632 1px solid;
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        background-color: $DarkGrayishBlue;
-
-        .shake-btn {
-            background-color: $NeonGreen;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            padding: 1rem;
-            display: flex;
-            margin: 10px auto;
-        }
-
-        .advice_number_row {
-            margin: 1rem auto;
-
-
-            small {
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                color: $NeonGreen;
-                font-weight: 400;
-            }
-
-        }
-
-        .actual_advice_row {
-            margin-top: 1.4rem;
-
-            .actual_advice {
-                font-size: 28px;
-                font-weight: 800;
-                color: $LightCyan;
-            }
-        }
-
-        picture {
-            position: relative;
-            bottom: 10px;
-        }
-    }
-
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
+.col {
+    width: 41.66%;
+}
 
 img {
     width: 100%;
     height: auto;
 }
 
-@media (min-width:800px) {
-    .card {
-        min-width: 500px;
-        max-width: 320px;
-        max-height: 280px;
-        border: #1f2632 1px solid;
-        border-radius: 10px;
+.card {
+    border: #1f2632 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: $DarkGrayishBlue;
+
+    .shake-btn {
+        background-color: $NeonGreen;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
         padding: 1rem;
-        text-align: center;
-        background-color: $DarkGrayishBlue;
+        display: flex;
+        margin: 10px auto;
+        cursor: pointer;
+        position: relative;
+    }
 
-        .shake-btn {
-            background-color: $NeonGreen;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            margin: 50px auto;
-            position: relative;
-            vertical-align: middle;
-            cursor: pointer;
+    .advice_number_row {
+        margin: 1rem auto;
 
+
+        small {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $NeonGreen;
+            font-weight: 400;
         }
 
-        .shake-btn:active,
-        .shake-btn:focus {
-            box-shadow: 1px 1px 50px 6px rgba(82, 255, 168, 0.66);
-        }
+    }
 
+    .actual_advice_row {
+        margin-top: 1.4rem;
 
-
-        .advice_number_row {
-            margin: 1rem auto;
-
-
-            small {
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                color: $NeonGreen;
-                font-weight: 400;
-            }
-
-        }
-
-        .actual_advice_row {
-            margin-top: 1.4rem;
-
-            .actual_advice {
-                font-size: 28px;
-                font-weight: 800;
-                color: $LightCyan;
-            }
-        }
-
-        picture {
-            position: relative;
-            bottom: -24px;
+        .actual_advice {
+            font-size: 28px;
+            font-weight: 800;
+            color: $LightCyan;
+            word-wrap: break-word;
         }
     }
 
+    picture {
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .card {
+        margin: auto;
+        height: 100%;
+
+        .shake-btn {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            margin: 10px auto;
+            bottom: -60px;
+        }
+
+        picture {
+            bottom: -14px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .col {
+        margin: auto;
+        padding: .5rem;
+    }
+
+    .card {
+        height: 100%;
+
+        .shake-btn {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            bottom: -60px;
+        }
+
+        picture {
+            bottom: -40px;
+        }
+    }
 }

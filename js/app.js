@@ -8,8 +8,10 @@ const quotes = [
 
 const shakeBtn = document.querySelector(".shake-btn");
 const advice = document.querySelector(".actual_advice");
+const adviceNumber = document.querySelector("#advice_number");
 
 shakeBtn.addEventListener("click", () => {
   const quote = Math.floor(Math.random() * quotes.length);
+  adviceNumber.innerHTML = quote;
   advice.innerHTML = quotes[quote];
 });
