@@ -10,7 +10,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Live Site URL: [Live site]{https://statuesque-lamington-50c158.netlify.app/)
+- Live Site URL: [Live site](https://statuesque-lamington-50c158.netlify.app/)
 
 ### Built with
 
